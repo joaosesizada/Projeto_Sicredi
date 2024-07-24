@@ -13,31 +13,32 @@ function maisDetalhes(cardId, idbtn) {
         meuBotao.textContent = 'Ocultar'; 
     }
 }
-let Expandido_fundo = false
+
+let Expandido_fundo = false;
 function maisFundos(fundoId) {
-    const fundos = document.getElementById(fundoId)
-    const btn = document.getElementById("mais_fundo")
-    Expandido_fundo = !Expandido_fundo
+    const fundos = document.getElementById(fundoId);
+    const btn = document.getElementById("mais_fundo");
+    Expandido_fundo = !Expandido_fundo;
     if (Expandido_fundo) {
-        fundos.style.height = 'auto'
-        btn.textContent = 'Ocultar Fundos'
+        fundos.style.height = 'auto';
+        btn.textContent = 'Ocultar Fundos';
     } else {
-        fundos.style.height = '1600px'
-        btn.textContent = 'Mostrar mais Fundos'
+        fundos.style.height = '1600px';
+        btn.textContent = 'Mostrar mais Fundos';
     }
 }
 
-let Expandido_Acao = false
+let Expandido_Acao = false;
 function maisAcoes(acoesId) {
-    const acoes = document.getElementById(acoesId)
-    const btn = document.getElementById("mais_acao")
-    Expandido_Acao = !Expandido_Acao
+    const acoes = document.getElementById(acoesId);
+    const btn = document.getElementById("mais_acao");
+    Expandido_Acao = !Expandido_Acao;
     if (Expandido_Acao) {
-        acoes.style.height = 'auto'
-        btn.textContent = 'Ocultar Ações'
+        acoes.style.height = 'auto';
+        btn.textContent = 'Ocultar Ações';
     } else {
-        acoes.style.height = '2650px'
-        btn.textContent = 'Mostrar mais Ações'
+        acoes.style.height = '2650px';
+        btn.textContent = 'Mostrar mais Ações';
     }
 }
 
@@ -55,13 +56,10 @@ function vendas(srcpassado, title, rent_mes_atual, rent_mes_anterior, rent_12_me
     const vendas_close = document.getElementById("vendas_close");
     const btn_qtn_menos = document.getElementById("btn_qtn_menos");
     const btn_qtn_mais = document.getElementById("btn_qtn_mais");
-<<<<<<< HEAD
-    const box_transaction = document.querySelector(".box_transaction")
-    const button_transaction = document.querySelector(".button_transaction")
+    const box_transaction = document.querySelector(".box_transaction");
+    const button_transaction = document.querySelector(".button_transaction");
 
-    let valor_acao = acao
-=======
->>>>>>> 84e30734b51953638627533f50009f5c0ac6f663
+    let valor_acao = acao;
     let quantidade = parseInt(qtn_vendas.value) || 0;
 
     document.body.style.overflow = 'hidden';
@@ -75,11 +73,7 @@ function vendas(srcpassado, title, rent_mes_atual, rent_mes_anterior, rent_12_me
     DOM_valor.innerHTML = `R$${acao}`;
 
     function atualizarValorTotal() {
-<<<<<<< HEAD
         const valor_total = (parseFloat(valor_acao) * quantidade).toFixed(2);
-=======
-        const valor_total = (parseFloat(acao) * quantidade).toFixed(2);
->>>>>>> 84e30734b51953638627533f50009f5c0ac6f663
         DOM_valor.innerHTML = `R$${valor_total}`;
     }
 
@@ -93,31 +87,23 @@ function vendas(srcpassado, title, rent_mes_atual, rent_mes_anterior, rent_12_me
             window.alert('Insira um valor válido');
         } else {
             DOM_venda.style.display = 'none';
-<<<<<<< HEAD
             quantidade = 1;
-            qtn_vendas.value = 1
+            qtn_vendas.value = 1;
             box_transaction.style.display = 'block';
         }
     });
+
     button_transaction.addEventListener("click", function() {
         box_transaction.style.display = 'none';
         base.style.opacity = '1';
         document.body.style.overflow = 'auto';
-    })
-=======
-            base.style.opacity = '1';
-            quantidade = 1;
-            qtn_vendas.value = 1
-            document.body.style.overflow = 'auto';
-        }
     });
->>>>>>> 84e30734b51953638627533f50009f5c0ac6f663
 
     vendas_close.addEventListener("click", function() {
         DOM_venda.style.display = 'none';
         base.style.opacity = '1';
-        quantidade = 1
-        qtn_vendas.value = 1
+        quantidade = 1;
+        qtn_vendas.value = 1;
         document.body.style.overflow = 'auto';
     });
 
@@ -142,7 +128,6 @@ function vendas(srcpassado, title, rent_mes_atual, rent_mes_anterior, rent_12_me
 
 function vendas_cripto(srcpassado, title, abreve, value, rent) {
     const DOM_venda = document.querySelector(".venda_cripto");
-<<<<<<< HEAD
     const DOM_valor = document.getElementById("valor_cripto");
     const base = document.querySelector(".base");
     const btn_comprar = document.querySelector(".btn-comprar-cripto");
@@ -162,23 +147,11 @@ function vendas_cripto(srcpassado, title, abreve, value, rent) {
     let filteredData = value.replace(/[^0-9,]/g, '').replace(',', '.');
     let valor_acao = parseFloat(filteredData);
     let quantidade = parseInt(qtn_vendas.value) || 1;
-=======
-    const base = document.querySelector(".base");
-    const qtn_vendas = document.getElementById("qtn_vendas");
-    const venda_cripto_title = document.getElementById("venda_cripto_title")
-    const venda_cripto_abreve = document.getElementById("venda_cripto_abreve")
-    const venda_cripto_value = document.getElementById("venda_cripto_value")
-    const venda_cripto_rent = document.getElementById("venda_cripto_rent")
-    const venda_cripto_icon = document.getElementById("venda_cripto_icon")
-    const vendas_close = document.getElementById("vendas_close_cripto");
-    let quantidade = parseInt(qtn_vendas.value) || 0;
->>>>>>> 84e30734b51953638627533f50009f5c0ac6f663
 
     document.body.style.overflow = 'hidden';
     base.style.opacity = '0.2';
     DOM_venda.style.display = 'block';
     venda_cripto_icon.src = srcpassado;
-<<<<<<< HEAD
     venda_cripto_title.innerHTML = title;
     venda_cripto_abreve.innerHTML = abreve;
     venda_cripto_value.innerHTML = `R$ ${value}`;
@@ -237,19 +210,3 @@ function vendas_cripto(srcpassado, title, abreve, value, rent) {
     })
 
   }
-=======
-    venda_cripto_title.innerHTML = title
-    venda_cripto_abreve.innerHTML = abreve
-    venda_cripto_value.innerHTML = `R$${value}`
-    venda_cripto_rent.innerHTML = rent
-    console.log("clicadododo")
-
-    vendas_close.addEventListener("click", function() {
-        DOM_venda.style.display = 'none';
-        base.style.opacity = '1';
-        quantidade = 1
-        qtn_vendas.value = 1
-        document.body.style.overflow = 'auto';
-    });
-}
->>>>>>> 84e30734b51953638627533f50009f5c0ac6f663

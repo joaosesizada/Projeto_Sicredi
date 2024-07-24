@@ -23,13 +23,6 @@ main {
     display: flex;
     flex-direction: row;
 }
-.base {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 101px;
-    height: 100%;
-    text-align: justify;
-}
 
 /*Hearder*/
 .icon_sicredi {
@@ -69,8 +62,6 @@ main {
 }
 /*FIM Hearder*/
 
-<<<<<<< HEAD
-=======
 /*Menu ao lado*/
 .menu_contracted {
     display: none;
@@ -94,7 +85,6 @@ main {
 }
 /*FIM Menu ao lado*/
 
->>>>>>> 84e30734b51953638627533f50009f5c0ac6f663
 /*Base*/
 
 .introducao {
@@ -492,17 +482,12 @@ main {
         top: 50%;
         left: 47.5%;
         transform: translate(-50%, -50%);
-<<<<<<< HEAD
-    }
-    .base {
-=======
     }
     .menu_contracted {
         display: none;
     }
     .base {
         background-color: rgb(217, 223, 140);
->>>>>>> 84e30734b51953638627533f50009f5c0ac6f663
         margin-top: 101px;
         text-align: justify;
     }    
@@ -588,16 +573,8 @@ main {
   
   /* Tablets em modo paisagem */
 @media (min-width: 769px) and (max-width: 1024px) {
-<<<<<<< HEAD
-    .titulo_pg {
-        position: absolute;
-        top: 50%;
-        left: 48.25%;
-        transform: translate(-50%, -50%);
-=======
     .menu_contracted {
         display: none;
->>>>>>> 84e30734b51953638627533f50009f5c0ac6f663
     }
     .icon_sicredi {
         position: absolute;
@@ -608,10 +585,7 @@ main {
     .base {
         margin-left: 15px;
         margin-right: 15px;
-<<<<<<< HEAD
-=======
         background-color: rgb(150, 216, 137);
->>>>>>> 84e30734b51953638627533f50009f5c0ac6f663
         margin-top: 101px;
         height: 100%;
         text-align: justify;
@@ -701,16 +675,12 @@ main {
     .base {
         margin-left: 40px;
         margin-right: 40px;
+        background-color: rgb(111, 173, 184);
         margin-top: 101px;
         height: 100%;
         text-align: justify;
     }   
-    .titulo_pg {
-        position: absolute;
-        top: 50%;
-        left: 48.25%;
-        transform: translate(-50%, -50%);
-    }
+
     .introducao h1 {
         font-size: 2.5rem;
         color: var(--verde_principal);
@@ -794,12 +764,6 @@ main {
         margin-top: 101px;
         height: 100%;
         text-align: justify;
-    }
-    .titulo_pg {
-        position: absolute;
-        top: 50%;
-        left: 48.25%;
-        transform: translate(-50%, -50%);
     }
     .introducao {
         border-radius: 0px 10px 10px 0px;

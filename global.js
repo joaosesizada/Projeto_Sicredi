@@ -16,7 +16,6 @@ function scrollToId(id) {
     } else {
         console.error(`Elemento com ID '${id}' não encontrado.`);
     }
-<<<<<<< HEAD
 }
 
 function sidebar() {
@@ -39,7 +38,4 @@ function redirecionar_menu(url) {
     const menu_contracted = document.querySelector(".menu_contracted")
     menu_contracted.style.display = 'none';
     window.location.href = url
-
-=======
->>>>>>> 84e30734b51953638627533f50009f5c0ac6f663
 }

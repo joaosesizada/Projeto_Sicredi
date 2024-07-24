@@ -163,34 +163,6 @@
         <button class="btn-comprar">Comprar</button>
     </div>
 </div>
-<div class="venda_cripto">
-    <div class="venda_cripto_hearder">
-        <img src="" alt="" height="40px" id="venda_cripto_icon">
-        <div id="venda_cripto_title">XXXXXXX</div>
-        <div id="venda_cripto_abreve">(XXX)</div>
-        <div>
-            <div class="venda_close_cripto" id="vendas_close_cripto"><img src="img/close_icon.png" alt=""></div>
-        </div>
-    </div>
-    <div class="venda_cripto_body">
-        <div class="venda_cripto_info">
-            <h2>Valores</h2>
-            <div id="venda_cripto_value">R$XXXXXXXX</div>
-        </div>
-        <div class="venda_cripto_info">
-            <h2>Rentabilidade dia</h2>
-            <div id="venda_cripto_rent">XXX%</div>
-        </div>
-    </div>
-    <div class="quantidade-container">
-        <button id="btn_qtn_menos">-</button>
-        <input type="text" value="1" id="qtn_vendas">
-        <button id="btn_qtn_mais">+</button>
-    </div>
-    <div class="pai_btn_comprar">
-        <button class="btn-comprar">Comprar</button>
-    </div>
-</div>
 <div class="base">
     <div class="introducao">
         <div class="introducao_box">
@@ -217,7 +189,6 @@
                 <p> Agora você pode investir nas <span>maiores</span> empresas do mercado e em nossos <span>fundos</span>, além de negociar <span>criptomoedas</span> diretamente conosco. Interessado em explorar mais sobre o mundo dos investimentos ou não sabe por onde começar? Visite nosso <span>Blog</span> e descubra tudo o que você precisa saber."</p>
             </div>
             <div class="sobre_item_corpo_href">
-                <p onclick="redirecionar_menu('blog.html')">Nosso Blog</p>
                 <p>Nosso Blog</p>
             </div>
         </div>
@@ -262,13 +233,6 @@
         </div>
         <div class="Tabela_riscos">
             <div class="pai_risco">
-                <div class="rico_item"><img onclick="scrollToId('nav_fundo')" src="invest/fundos_icon.png" alt=""><p onclick="scrollToId('nav_fundo')">Fundos</p></div>
-                <div class="rico_item"><img onclick="scrollToId('nav_acao')" src="invest/acoes_icon.png" alt=""><p onclick="scrollToId('nav_acao')">Ações</p></div>
-                <div class="rico_item"><img onclick="scrollToId('cripto_redirect')" src="img/icon.fund.tech.png" alt=""><p onclick="scrollToId('cripto_redirect')">Criptomoedas</p></div>
-            </div>
-        </div>
-        <div class="Tabela_riscos">
-            <h1 id="nav_fundo">Tabela de Riscos</h1>
                 <div class="rico_item"><img src="invest/fundos_icon.png" alt=""><p>Fundos</p></div>
                 <div class="rico_item"><img src="invest/acoes_icon.png" alt=""><p>Ações</p></div>
                 <div class="rico_item"><img src="img/icon.fund.tech.png" alt=""><p>Criptomoedas</p></div>
@@ -288,7 +252,6 @@
             <h1>Fundos</h1>
             <div class="fundos_itens" id="fundos_itens">
                 <div class="card card_risco_pouco">
-                    <div class="header_card" >
                     <div class="header_card">
                         <img src="invest/risco_pouco.png" alt="Logo" class="logo">
                         <h1>Sicredi Fundo Tech </h1>
@@ -922,14 +885,12 @@
                     <h2>(BTC)</h2>
                 </div>
                 <div class="cripto_rend">
-                    <h2>R$352.881,25</h2>
                     <h2>R$352,881.25</h2>
                     <h3>1,51%</h3>
                 </div>
            </div>
            <div>
                 <button class="cripto_info">Mai Detalhes</button>
-                <button class="cripto_buy" onclick="vendas_cripto('invest/bitcoin-icon.png', 'Bitcoin', '(BTC)', '352.881,25', '1,51%')">Comprar</button>
                 <button class="cripto_buy" onclick="vendas_cripto('invest/bitcoin-icon.png', 'Bitcoin', '(BTC)', '352,881.25', '1,51%')">Comprar</button>
            </div>
         </div>
@@ -941,14 +902,12 @@
                 <h2>(ETH)</h2>
             </div>
             <div class="cripto_rend">
-                <h2>R$18.543,30</h2>
                 <h2>R$18,543.30</h2>
                 <h3>2,34%</h3>
             </div>
             </div>
             <div>
             <button class="cripto_info">Mais Detalhes</button>
-            <button class="cripto_buy" onclick="vendas_cripto('invest/ethereum-icon.png', 'Ethereum', '(ETH)', '18.543,30', '2,34%')">Comprar</button>
             <button class="cripto_buy" onclick="vendas_cripto('invest/ethereum-icon.png', 'Ethereum', '(ETH)', '18,543.30', '2,34%')">Comprar</button>
             </div>
         </div>

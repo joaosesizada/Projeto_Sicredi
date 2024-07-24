@@ -108,11 +108,8 @@
     width: 80%;
     height: auto;
     position: fixed;
-<<<<<<< HEAD
     top: 55%;
-=======
     top: 50%;
->>>>>>> 84e30734b51953638627533f50009f5c0ac6f663
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
@@ -121,6 +118,7 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     z-index: 1001;
     padding: 40px 0 40px 0;
+    text-align: center;
     display: none;
 }
 
@@ -140,12 +138,9 @@
     width: auto;
     height: auto;
     text-align: center;
-<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-=======
->>>>>>> 84e30734b51953638627533f50009f5c0ac6f663
 }
 .venda_cripto_info h2 {
     font-size: 30px;
@@ -185,7 +180,6 @@
 }
 /*Venda Cripto*/
 
-<<<<<<< HEAD
 /*transaction*/
 .box_transaction {
     width: 80%;
@@ -249,25 +243,17 @@
     .venda {
         width: 90%;
         top: 55%;
-=======
-@media (max-width: 600px) {
-    .venda {
-        width: 90%;
->>>>>>> 84e30734b51953638627533f50009f5c0ac6f663
     }
     .venda_hearder {
         padding-left: 20px;
         padding-right: 20px;
     }
-<<<<<<< HEAD
     .venda_cripto_body {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
     }
-=======
->>>>>>> 84e30734b51953638627533f50009f5c0ac6f663
     .rentabilidade-detalhes {
         padding-left: 40px;
         padding-right: 40px;
@@ -277,23 +263,16 @@
         top: 10%;
         left: 87%;
     }
-<<<<<<< HEAD
     #venda_cripto_abreve {
         margin-right: 50px;
     }
 
-=======
->>>>>>> 84e30734b51953638627533f50009f5c0ac6f663
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
     .venda {
         width: 90%;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 84e30734b51953638627533f50009f5c0ac6f663
     .venda_hearder {
         padding-left: 20px;
         padding-right: 20px;
