@@ -1,0 +1,377 @@
+:root {
+    --verde_principal: #3FA110;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    background-color: white;
+    z-index: 1000;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Hearder*/
+.icon_sicredi {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-65%, -50%);
+}
+
+.menu_hearder {
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    border-radius: 5px;
+    transform: translate(-10%, -50%);
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+.menu_hearder:hover {
+    background-color: #9c9c9cad;
+}
+.menu_hearder img {
+    height: 100%;
+}
+
+.titulo_pg {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+.titulo_pg h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: var(--verde_principal);
+}
+/*padrao*/
+.padrao {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 40px;
+    height: 100%;
+    text-align: justify;
+}
+/*padrao*/
+/*img*/
+#networking_blog_img {
+    border-radius: 15px;
+    background-image: url('Blog/networking_blog.jpg');
+}
+#fundos_blog_img {
+    border-radius: 15px;
+    background-image: url('Blog/fundos_blog.jpg');
+}
+#cripto_blog_img {
+    border-radius: 15px;
+    background-image: url('Blog/cripto_blog.jpg');
+}
+#acoes_blog_img {
+    border-radius: 15px;
+    background-image: url('Blog/acoes_blog.jpg');
+}
+/*img*/
+/*inverso*/
+.box_inverso{
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom:35px;
+    margin-top: 40px;
+    height: 100%;
+    text-align: justify;
+    background-color: #206102;
+    color: white;
+}
+#investimentos_blog_img {
+    border-radius: 15px;
+    background-image: url('Blog/blog_investimentos.jpg');
+}
+.investimentos_blog {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+    display: flex;
+    height: auto;
+    min-height: 50vh;
+}
+.investimentos_blog_text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.investimentos_blog_text p {
+    text-align: justify;
+}
+.investimentos_blog_text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic !important;
+    font-family: 'Exo 2' !important;
+    line-height: 3rem !important;
+}
+/*inverso*/
+/*introducao_networking*/
+
+.introducao_blog_text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#introducao_blog_img {
+    border-radius: 15px;
+    background-image: url('Blog/introducao_blog.jpg');
+}
+.introducao_blog_text p {
+    text-align: justify;
+}
+/*introducao_networking*/
+
+
+@media (max-width: 600px) {
+    .titulo_pg {
+        position: absolute;
+        top: 50%;
+        left: 47.5%;
+        transform: translate(-50%, -50%);
+    }
+    .icon_sicredi {
+        display: none;
+    }
+    .introducao_blog {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 50vh;
+    }
+    .introducao_blog_img {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center; /* Centraliza a imagem */
+        min-height: 50vh;
+        max-height: 100%; /* Garante que o contêiner da imagem ocupe toda a altura disponível */
+    }
+    .introducao_blog_text h1 {
+        font-size: 2.3rem;
+        color: var(--verde_principal);
+        font-weight: bold;
+        font-style: italic !important;
+        font-family: 'Exo 2' !important;
+        line-height: 3rem !important;
+    }
+    .investimentos_blog {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 50vh;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .titulo_pg {
+        position: absolute;
+        top: 50%;
+        left: 47.5%;
+        transform: translate(-50%, -50%);
+    }
+    .icon_sicredi {
+        display: none;
+    }
+    .introducao_blog {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 50vh;
+    }
+    .introducao_blog_img {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center; /* Centraliza a imagem */
+        min-height: 50vh;
+        max-height: 100%; /* Garante que o contêiner da imagem ocupe toda a altura disponível */
+    }
+    .introducao_blog_text h1 {
+        font-size: 2.3rem;
+        color: var(--verde_principal);
+        font-weight: bold;
+        font-style: italic !important;
+        font-family: 'Exo 2' !important;
+        line-height: 3rem !important;
+    }
+    .investimentos_blog {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 50vh;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .titulo_pg {
+        position: absolute;
+        top: 50%;
+        left: 48.25%;
+        transform: translate(-50%, -50%);
+    }
+    .icon_sicredi {
+        position: absolute;
+        top: 50%;
+        left: 86%;
+        transform: translate(-65%, -50%);
+    }
+    .base {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 101px;
+        height: 100%;
+        text-align: justify;
+    }  
+    .introducao_blog {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 50vh;
+    }
+    .introducao_blog_img {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center; /* Centraliza a imagem */
+        min-height: 50vh;
+        max-height: 100%; /* Garante que o contêiner da imagem ocupe toda a altura disponível */
+    }
+    .introducao_blog_text h1 {
+        font-size: 2.5rem;
+        color: var(--verde_principal);
+        font-weight: bold;
+        font-style: italic !important;
+        font-family: 'Exo 2' !important;
+        line-height: 3rem !important;
+    }
+    .investimentos_blog_text {
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .base {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 101px;
+        height: 100%;
+        text-align: justify;
+    }   
+    .introducao_blog {
+        margin-top: 20px;
+        display: flex;
+        height: auto;
+        min-height: 50vh;
+    }
+    .titulo_pg {
+        position: absolute;
+        top: 50%;
+        left: 48.25%;
+        transform: translate(-50%, -50%);
+    }
+    .introducao_blog_text h1 {
+        font-size: 2.5rem;
+        color: var(--verde_principal);
+        font-weight: bold;
+        font-style: italic !important;
+        font-family: 'Exo 2' !important;
+        line-height: 3rem !important;
+    }
+    .introducao_blog_text {
+        padding-right: 30px;
+    }
+    .introducao_blog_img {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center; /* Centraliza a imagem */
+        max-height: 100%; /* Garante que o contêiner da imagem ocupe toda a altura disponível */
+    }
+    .investimentos_blog_text {
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .base {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 101px;
+        height: 100%;
+        text-align: justify;
+    }
+    .titulo_pg {
+        position: absolute;
+        top: 50%;
+        left: 48.25%;
+        transform: translate(-50%, -50%);
+    }
+    .introducao_blog {
+        margin-top: 20px;
+        display: flex;
+        height: auto;
+        min-height: 50vh;
+    }
+    .introducao_blog_img {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center; /* Centraliza a imagem */
+        max-height: 100%; /* Garante que o contêiner da imagem ocupe toda a altura disponível */
+    }
+    .introducao_blog_text {
+        padding-right: 40px;
+    }
+    .introducao_blog_text h1 {
+        font-size: 3rem;
+        color: var(--verde_principal);
+        font-weight: bold;
+        font-style: italic !important;
+        font-family: 'Exo 2' !important;
+        line-height: 3rem !important;
+    }
+    .investimentos_blog_text {
+        padding-left: 30px;
+    }
+}

@@ -1,0 +1,40 @@
+.menu_contracted {
+    width: auto;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-right: 1px solid #d3d3d3;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1001;
+    display: none;
+}
+.menu_contracted_close {
+    display: flex;
+    justify-content: end;
+}
+.menu_contracted_close img {
+    height: 80px;
+    padding: 10px;
+    cursor: pointer;
+}
+.menu_contracted_item {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding: 25px;
+    font-weight: bold;
+    color: #3FA110;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.menu_contracted_item:hover {
+    background-color: #e4e4e4;
+}
+
+.menu_contracted_item img{
+    height: 60px;
+}
